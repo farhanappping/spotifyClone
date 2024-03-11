@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsiveness.css">
+    <link rel="stylesheet" href="assets/css/utility.css">
+</head>
+<body>
+    <div class="container flex bg-black">
+    <div class="left">
+            <div class="home bg-gray rounded" style="padding: 0 0 1px 10px;"> 
+               <div class="logo">
+                <img class="invert" src="img/logo.svg" alt="logo" style="width: 36%;">
+                <img class="closeHamburger invert" src="img/closeHamburger.svg" alt="" style="margin-right: 10px;">
+               </div>
+               <ul>
+                <li class="items-center" style="padding: 10px 0 0 15px;
+                    "><img class="invert" src="img/home.svg" alt="home"><p>
+                    Home
+                </p></li>
+                <li class="items-center" style="padding: 10px 0 0 15px;
+                "><img class="invert" src="img/search.svg" alt="search"><p style="color: gray;">Search</p></li>
+            </ul>
+        </div>
+        <div class="library bg-gray rounded" style="padding: 0 0 0 10px;">
+           <div class="heading">
+            <div style="display: flex;gap: 15px;">
+                <img class="invert" src="img/playlist.svg" alt="">
+            <h2 style="color: gray;">
+              Your Library
+            </h2>
+            </div>
+            <div style="margin-right: 20px;">
+                <img class="invert" src="img/plus.svg" alt="" style="margin-right: 10px;">
+            </div>
+           </div>
+
+           <div class="songLists">
+            <ul class="playlist">
+                <li>
+                   
+                    <div class="info">
+                        <div>Create Your First Playlist</div>
+                        <div style="font-size: 14px;margin-top: 10px;font-weight: 400;color: #cdc7c7;">It's easy, we will help you</div>
+                        <div>
+                    <button class="createPlaylist">Create PLaylist</button>
+
+                        </div>
+                    </div>
+                  
+                </li>
+                <li>
+                    
+                    <div class="info">
+                        <div>Let's Find some podcasts to follow</div>
+                        <div style="font-size: 14px;margin-top: 10px;font-weight: 400;color: #cdc7c7;">It's easy, we will help you</div>
+                        <div>
+                    <button class="createPlaylist">Browse Podcasts</button>
+
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+            <audio id="audioPlayer" preload="auto"></audio>
+           </div>
+
+        <div class="footer">
+            <div class="privacy" style="gap: 20px;margin-left: 10px;">
+                <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+                <a href="https://www.spotify.com/jp/privacy/"><span>Safety & Privacy Center</span></a>
+                <a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+            </div>
+            
+            
+            <div class="privacy" style="gap: 20px;margin-left: 10px;"><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a>
+                <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                <a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a>
+            </div>
+           <div class="privacy" style="margin-left: 10px;">
+            <a href="">Cookies</a>
+           </div>
+        </div>
+
+        <div class="language">
+            <button style="">
+                <img class="invert" src="img/globe.png" style="" alt="">
+                <p style="">English</p>
+            </button>
+        </div>
+    </div>
+          
+        </div>
+        <div class="right bg-gray rounded m-1">
+            <div class="header">
+                <div class="nav">
+                   <div class="hamburger-container">
+                    <img class="hamburger" src="img/hamburger.svg" alt="">
+                   
+                    <img src="img/left-arrow.png" alt="">
+                    <img src="img/right-arrow.png" alt="">
+                   </div>
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h2 style="padding: 5px;">Spotify Playlists</h2>
+                <div class="cardContainer">
+                    <div data-song='surah-fatiha.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah - Fatiha</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!.</p>
+                    </div>
+                
+                    <div data-song='surah-kaafiroon.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img7.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Kaafiroon</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+
+                    <div data-song='surah-nasr.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img4.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Nasr</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+                    
+                    <div data-song='surah-masadd.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img8.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Masadd</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+
+                    <div data-song='surah-ikhlas.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img5.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Ikhlas</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+
+                    <div data-song='surah-falaq.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img6.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Falaq</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+
+                    <div data-song='surah-nas.mp3' class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="#000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <img src="img/img10.jpg" id="chilli" alt="">
+                        <h2 class="title">Surah-Nas</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ex!.</p>
+                    </div>
+                </div>
+                
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">Surah-Fatiha</div>
+                        <div class="songbuttons">
+                            <img src="img/previous.svg" id="previous" alt="">
+                            <img src="img/play.svg" class="playBtn" id="play"  alt="">
+                            <img src="img/next.svg" id="next" alt="">
+                        </div>
+                        <div style="" class="timevol">
+                            <div class="songtime">00:00/00:00</div>
+                            <div class="volume">
+                                <img src="img/volumeHigh.svg" id="volume" alt="">
+                                <div class="range">
+                                    <input type="range" class="ranger" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
