@@ -184,6 +184,6 @@ document.getElementById('previous').addEventListener('click', previousSong);
         }
     });
     
-    
+    console.log('test');
 }
 main()
